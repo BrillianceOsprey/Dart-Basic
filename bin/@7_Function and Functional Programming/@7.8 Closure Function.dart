@@ -1,18 +1,21 @@
 // closure [close over]
 
-void main(){
+void main() {
   int x = 8;
-  inner(){
+  inner() {
     int i = 1; // to use closure for this int
     // print(x);
-    int cl(){
+    int cl() {
       return i;
     }
+
     return cl();
   }
-  // int ini = inner();
+
+  int ini = inner();
+  print(ini);
+  print(inner);
   print(inner());
-  // print(inner());
 }
 
 
