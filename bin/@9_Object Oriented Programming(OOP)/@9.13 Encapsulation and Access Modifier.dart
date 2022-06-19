@@ -5,10 +5,7 @@
 
 import '@9.1302.dart';
 
-void main(){
+void main() {
   Number number = Number();
   number.triple(3);
 }
-
-
-
