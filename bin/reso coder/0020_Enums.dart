@@ -1,7 +1,7 @@
 enum AccountType { free, premium, vip }
 
 void main(List<String> arguments) {
-  final userAccountType = AccountType.premium;
+  final userAccountType = AccountType.vip;
   print(userAccountType.index);
   AccountType.values[1];
 
@@ -13,6 +13,7 @@ void main(List<String> arguments) {
       print('20 USD');
       break;
     default:
+      print('40 USD');
       break;
   }
 }

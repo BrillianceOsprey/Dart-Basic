@@ -2,16 +2,18 @@
 // first class object as function [Function can use with var]
 // function as a parameter, function as a return type [Higher order function]
 
-// void main(){
-//   int rF = retrunSquare(4);
-//   print(rF);
-// }
-// int retrunSquare(int num){
-//   int square(){
-//     return num *num;
-//   }
-//   return square();
-// }
+void main() {
+  int rF = retrunSquare(4);
+  print(rF);
+}
+
+int retrunSquare(int num) {
+  int square() {
+    return num * num;
+  }
+
+  return square();
+}
 
 // int square(int num){
 //   return  num * num;

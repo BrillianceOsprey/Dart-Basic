@@ -1,16 +1,17 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:meta/meta.dart';
+// import 'package:meta/meta.dart';
 
 void main(List<String> arguments) {
   final person1 = Person(name: 'joker', age: 12);
   final person2 = person1.copyWith(age: person1.age + 2);
-  print(person2.age);
+  // print(person1.age);
+  // print(person2.age);
 
-  // final person1Updated = Person(name: person1.name, age: person1.age + 1);
-  // print(person1Updated.age);
+  final person1Updated = Person(name: person1.name, age: person1.age + 1);
+  print(person1Updated.age);
 }
 
-@immutable
+// @immutable
 class Person {
   final String name;
   final int age;

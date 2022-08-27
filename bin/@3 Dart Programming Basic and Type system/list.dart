@@ -28,8 +28,23 @@ void main() {
   DateTime firstDayOfMonth =
       DateTime(DateTime.now().year, DateTime.now().month, 1);
   DateTime lastDayOfMonth = DateTime(now.year, now.month + 1, 0);
-  print("${lastDayOfMonth.month}/${lastDayOfMonth.day}");
-  print('$now');
-  print('$firstDayOfMonth');
-  print('$lastDayOfMonth');
+  // print("${lastDayOfMonth.month}/${lastDayOfMonth.day}");
+  // print('$now');
+  // print('$firstDayOfMonth');
+  // print('$lastDayOfMonth');
+
+  List<String> weekDataList = [];
+  for (var i = 0; i < 10; i += 2) {
+    weekDataList.add(i.toString());
+  }
+  // print(weekDataList);
+
+  List<Map> mapList = [
+    {'key1': 'value1'}
+  ];
+
+  mapList.add({'key2': 'value2'});
+
+  print(mapList);
+  print(mapList.toString());
 }

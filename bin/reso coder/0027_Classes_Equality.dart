@@ -10,6 +10,8 @@ void main(List<String> arguments) {
     lastName: 'One',
   );
   print(user1 == user2);
+  print(user1.hashCode);
+  print(user2.hashCode);
 }
 
 class User {

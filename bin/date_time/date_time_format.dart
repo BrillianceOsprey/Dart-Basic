@@ -1,10 +1,22 @@
 import 'package:date_format/date_format.dart';
+
+import '../@11_Asynchronous Programming & Multi-Threading/@11.16 Type Allias in Dart.dart';
 // day, weekday, month, substract, yesterday,
 // setStringFromDate, findFirstDayOfTheWeek, findLastDayOfTheWeek
 
 void main(List<String> args) {
   DateTime today = DateTime.now();
   DateTime date = today;
+  DateTime setDate = DateTime(today.year, today.month, 12);
+  print(getDateTimeList(-2));
+
+  for (var i = 0; i < 45; i++) {
+    // print(setDateTime(i));
+  }
+  // print(formatDate(getLastMonth(setDate), [yyyy, '-', MM, '-', dd]));
+  // print(findLastDateOfTheMonth(setDate));
+  // print(today.weekday);
+
   // print(formatDate(
   //     today, [yyyy, ' /', M, '-', MM, '/', m, '-', mm, '-', DD])); // today
   // print(today.subtract(Duration(days: 1))); // yesterday
@@ -31,9 +43,6 @@ void main(List<String> args) {
   // print(DateTime(date.year, date.month, 9).weekday);
   // print(formatDate(DateTime(date.year, date.month, 9), ['DD']));
 
-  DateTime setDate = DateTime(today.year, today.month, 12);
-  print(getLastMonth(setDate));
-  print(findLastDateOfTheMonth(setDate));
   // String setStringFromDate = formatDate(DateTime(today.year, today.month, 14),
   //     ['DD', ' ', 'dd', ' ', 'MM', ' ', 'yyyy']);
   // print(setStringFromDate);
@@ -51,6 +60,12 @@ void main(List<String> args) {
   // print(setDate.subtract(const Duration(days: 7)));
   // print(findFirstDateOfPreviousWeek(setDate));
 }
+
+getDateTimeList(int num) {
+  return [setDateTime(num - 1), setDateTime(num), setDateTime(num + 1)];
+}
+
+DateTime setDateTime(int num) => DateTime.now().add(Duration(days: num));
 
 String getFormattedDateString(DateTime date) {
   final formatter = formatDate(DateTime.now(), ['EE', 'DDD', 'mmm']);
