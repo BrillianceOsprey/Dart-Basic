@@ -1,6 +1,6 @@
 // collection of objects
 
-void main(){
+void main() {
   Person person1 = Person();
   person1.name = 'Thiha';
   person1.age = 24;
@@ -9,17 +9,20 @@ void main(){
   person2.name = 'Ma Ma';
   person2.age = 25;
   List<Person> persons = [person1, person2]; //collection of objects
-  for(var value in persons){
+  List<String> nameList = [];
+  for (var value in persons) {
     // print(value.speak);
     print('Name is ${value.name}. Age is ${value.age}');
+    nameList.add(value.name.toString());
     print(value.name);
     value.speak();
     value.run();
     print('........');
   }
+  print(nameList);
 }
 
-class Person{
+class Person {
   String? name;
   int? age;
   void speak() => print("Name, $name can speak");

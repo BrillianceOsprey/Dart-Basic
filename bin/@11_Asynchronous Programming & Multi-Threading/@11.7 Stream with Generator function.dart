@@ -1,26 +1,27 @@
-//Sync generator // Iterable 
+//Sync generator // Iterable
 //Async generator and recursive function
 
-
-void main(){
+void main() {
   print('Normal work1');
   getNum(7).listen((num) => print(num))
-  ..onDone(() {print('Done');})
-  ..onError((error) => print(error));
+    ..onDone(() {
+      print('Done');
+    })
+    ..onError((error) => print(error));
   print('Normal work2');
   print('Normal work3');
 }
-Stream<int> getNum(int num)async*{
-  if(num > 0){
+
+Stream<int> getNum(int num) async* {
+  if (num > 0) {
     await Future.delayed(Duration(seconds: 1));
-    if(num == 3){
-      throw Exception('This is error');
+    if (num == 3) {
+      throw Exception('This is error'); // stop program
     }
     yield num;
-    yield* getNum(num -1); // recursive function
+    yield* getNum(num - 1); // recursive function
   }
 }
-
 
 // void main(){
 //   print('Normal work1');
@@ -41,4 +42,3 @@ Stream<int> getNum(int num)async*{
 // 3
 // Normal work2
 // Normal work3
-

@@ -14,18 +14,24 @@
 //   }
 // }
 
-
-void main(){
+void main() {
   int num = 3;
-  print(num.tenTime());
-  num.addFive();
+  // print(num.tenTime());
+  // num.addFive();
+  print(num.addTwo);
 }
 
-extension ExtInt on int{
-  int tenTime(){
+extension ExtInt on int {
+  int tenTime() {
     return (this * 10);
   }
-  void addFive(){
+
+  void addFive() {
     print(this + 5);
+  }
+
+// Use getter method
+  int get addTwo {
+    return this + 2;
   }
 }

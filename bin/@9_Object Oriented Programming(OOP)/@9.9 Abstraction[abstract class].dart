@@ -1,7 +1,8 @@
 // Abstraction(abstract class)
 // Abstract classes can't be instantiated
+// all methods in abstract must be override
 
-void main(){
+void main() {
   // Person person = Person(); // Abstract classes can't be instantiated.
   Engineer engineer = Engineer();
   engineer.name();
@@ -12,15 +13,16 @@ void main(){
   engineer.phone(); // extra method in parent class
 }
 
-abstract class Person{
+abstract class Person {
   void name();
   void age();
   String address();
-  void phone(){
+  void phone() {
     print('Phone is 09123456789');
   }
 }
-class Engineer extends Person{
+
+class Engineer extends Person {
   @override
   String address() {
     return 'Address is YGN';
@@ -37,8 +39,7 @@ class Engineer extends Person{
     print('Name is Mg Mg');
   }
 
-  void job(){
+  void job() {
     print('Job is programmer');
   }
-
 }
