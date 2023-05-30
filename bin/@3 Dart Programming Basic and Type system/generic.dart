@@ -6,8 +6,8 @@ void main() {
     );
   }
 
-  Size size = stringToEnum<Size>("large", Size.values);
-  print(size);
+  Size size = stringToEnum<Size>("small", Size.values);
+  print(size.index);
 }
 
 enum Size { small, medium, large }

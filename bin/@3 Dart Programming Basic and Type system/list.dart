@@ -1,7 +1,7 @@
 void main() {
   //First Method - update
   List myList = [1, 2, 3];
-  myList[0] = 123;
+  myList[0] = 0;
   // print(myList);
 
   //Second Method - using .replaceRange() method
@@ -10,7 +10,7 @@ void main() {
   // print(myList2);
 
   List<int> yearList = [];
-  for (int i = DateTime.now().year - 10; i < DateTime.now().year + 2; i++) {
+  for (int i = DateTime.now().year - 10; i < DateTime.now().year + 100; i++) {
     yearList.add(i);
   }
   // print(yearList);
@@ -21,7 +21,7 @@ void main() {
 
   List<int> dateList = [];
   for (int i = DateTime.now().year - 10; i < DateTime.now().year + 2; i++) {
-    yearList.add(i);
+    dateList.add(i);
   }
 
   DateTime now = DateTime.now();
@@ -43,8 +43,8 @@ void main() {
     {'key1': 'value1'}
   ];
 
-  mapList.add({'key2': 'value2'});
+  mapList.add({'key1': 'value2651'});
 
-  print(mapList);
-  print(mapList.toString());
+  print(index);
+  print(mapList[0]);
 }
