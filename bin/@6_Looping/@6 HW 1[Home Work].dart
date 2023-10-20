@@ -28,6 +28,8 @@
 //   }
 // }
 
+// ignore_for_file: file_names
+
 // void main() {
 //   for (int i = 0; i <= 100; i = i + 3) {
 //     if (i > 1 && i <= 100) print(i);

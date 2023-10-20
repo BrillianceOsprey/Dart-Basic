@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 enum AccountType { free, premium, vip }
 
 void main(List<String> arguments) {

@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+// ignore_for_file: public_member_api_docs, sort_constructors_first, file_names
 void main(List<String> arguments) {
   final user1 = User(
     firstName: 'Joker',

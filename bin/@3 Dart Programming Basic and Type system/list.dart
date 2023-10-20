@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main() {
   //First Method - update
   List myList = [1, 2, 3];

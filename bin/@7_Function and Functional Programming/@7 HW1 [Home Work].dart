@@ -12,6 +12,8 @@
 //    return 'My name is $name';
 // }
 
+// ignore_for_file: file_names
+
 void main() {
   var p = person(name: 'Mg Mg', age: 24);
   print(p);

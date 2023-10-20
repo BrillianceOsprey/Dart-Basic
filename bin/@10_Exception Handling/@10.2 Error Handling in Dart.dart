@@ -1,6 +1,8 @@
 // try
 // on --- catch
 
+// ignore_for_file: unused_catch_clause
+
 void main() {
   List num = [1, 2];
   try {

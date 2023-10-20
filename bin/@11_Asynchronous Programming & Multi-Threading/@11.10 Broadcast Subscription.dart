@@ -1,7 +1,8 @@
 // Hot Stream or broadcast subscription
 
+// ignore_for_file: avoid_types_as_parameter_names
+
 import 'dart:async';
-import 'dart:math';
 
 StreamController streamController = StreamController();
 StreamSink streamSink = streamController.sink;

@@ -2,6 +2,8 @@
 // Don't override fields(variable).
 // can extend method of the class
 
+// ignore_for_file: overridden_fields
+
 void main() {
   Engineer engineer = Engineer();
   engineer.speak();

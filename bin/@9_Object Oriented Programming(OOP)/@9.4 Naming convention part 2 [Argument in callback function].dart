@@ -1,5 +1,7 @@
 // argument in callback function, under scole _
 
+// ignore_for_file: avoid_types_as_parameter_names
+
 void main() {
   // calculate(num: 2, cal: (single, _, __, fourth){
   //   print('$single');

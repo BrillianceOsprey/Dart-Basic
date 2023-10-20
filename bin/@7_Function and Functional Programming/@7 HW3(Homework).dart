@@ -30,6 +30,8 @@
 // }
 // triple({required int num, required Function(int ans) result,}) => result(num * 3);
 
+// ignore_for_file: file_names
+
 void main() {
   int result = multiplyWithFunction(5, (value) => value * 2);
   print(result); // Output: 10

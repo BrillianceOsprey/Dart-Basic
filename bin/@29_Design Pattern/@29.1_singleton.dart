@@ -30,6 +30,8 @@
 //   print(apiService2.hashCode); // 958836859, same
 // }
 
+// ignore_for_file: unused_element
+
 /// 3
 class ApiService {
   String? _dio;

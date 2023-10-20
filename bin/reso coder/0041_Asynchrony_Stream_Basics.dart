@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 Future<void> main(List<String> arguments) async {
   final myPeriodStream = Stream.periodic(Duration(seconds: 1));
   final subscription = myPeriodStream.listen((event) {

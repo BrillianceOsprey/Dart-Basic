@@ -9,6 +9,8 @@
 //   }
 // }
 
+// ignore_for_file: file_names
+
 // void main() {
 //   for (int i = 0; i <= 50; i++) {
 //     if (i < 2 && (i % 2) != 2) {

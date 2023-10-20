@@ -3,6 +3,8 @@
 // name constructor
 // factory constructor, return constructor
 
+// ignore_for_file: unused_local_variable
+
 void main() {
   // Person person = Person(); // default constructor
   // Person person1 = Person.age(); // name constructor

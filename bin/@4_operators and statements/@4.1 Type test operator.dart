@@ -35,6 +35,8 @@
 //   print(a is! int);
 // } 
 
+// ignore_for_file: dangling_library_doc_comments
+
 /**void main(){
  int a = 5;
  print(a is double);

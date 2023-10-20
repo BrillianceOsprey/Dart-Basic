@@ -1,6 +1,8 @@
 //Sync generator // Iterable
 //Async generator and recursive function
 
+// ignore_for_file: avoid_types_as_parameter_names
+
 void main() {
   print('Normal work1');
   getNum(7).listen((num) => print(num))

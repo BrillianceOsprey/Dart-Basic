@@ -33,7 +33,7 @@ mixin Physics {
   void physics01() => print('Studying physics01');
 }
 
-class English {
+mixin English {
   void english() => print('Studying english');
 }
 

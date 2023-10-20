@@ -25,6 +25,8 @@
 
 // int totalSum = int.parse(chicken)+int.parse(cola?? '0')+int.parse(potato?? '0');
 
+// ignore_for_file: file_names
+
 void main() {
   var total = order(chicken: '5000', burger: '4000', pepsi: '2000');
   print(total);

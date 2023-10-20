@@ -1,19 +1,21 @@
-//addNumber လို့ခေါ်တဲ့ function ၁ မှာ int List ၁ ခု ကို parameter အနေနဲ့ထည့်ထားမယ်။ အဲ့ဒီ function ထဲမှာပဲ 
+//addNumber လို့ခေါ်တဲ့ function ၁ မှာ int List ၁ ခု ကို parameter အနေနဲ့ထည့်ထားမယ်။ အဲ့ဒီ function ထဲမှာပဲ
 //add လို့ ခေါ်တဲ့ int function ၁ ခုထပ်ရှိပြီး list ထဲကပါတဲ့  integer တွေအားလုံးကို ပေါင်းပြီး add ကို return ပြန်ပေးရမယ်။
 
+// ignore_for_file: file_names
 
-void main(){
-  addNumber(list: [4,3,2,1]);
+void main() {
+  addNumber(list: [4, 3, 2, 1]);
 }
-void addNumber({required List<int> list}){
-  
-  add(){
+
+void addNumber({required List<int> list}) {
+  add() {
     int sumTotal = 0;
-    list.forEach((element) {
+    for (var element in list) {
       sumTotal += element;
-    });
-    print(sumTotal) ;    
+    }
+    print(sumTotal);
   }
+
   return add();
 }
 
@@ -28,7 +30,7 @@ void addNumber({required List<int> list}){
 //     list.forEach((element) {
 //       sumTotal += element;
 //     });
-//     return sumTotal;    
+//     return sumTotal;
 //   }
 //   return add();
 // }
@@ -41,10 +43,10 @@ void addNumber({required List<int> list}){
 // int totalSum = 0;
 //   addFunction(List<int> list){
 //     for(int i = 0; i<list.length; i++){
-//       totalSum += list[i]; 
+//       totalSum += list[i];
 //     }
 //     return totalSum;
 //   }
-// addNumber({List<int>? list, Function? add}){  
+// addNumber({List<int>? list, Function? add}){
 //   return addFunction(list!);
 // }

@@ -1,5 +1,7 @@
 // Stream Transformer class and operators
 
+// ignore_for_file: avoid_types_as_parameter_names
+
 import 'dart:async';
 
 StreamController streamController = StreamController();

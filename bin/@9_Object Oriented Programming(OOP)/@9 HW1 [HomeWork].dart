@@ -1,6 +1,6 @@
-// Create a Map of students that key  is always integer and represent as a roll number and 
-// value is Student object. Each of Student contains name, age and gender. 
-// Please create minimum 3 of the students. 
+// Create a Map of students that key  is always integer and represent as a roll number and
+// value is Student object. Each of Student contains name, age and gender.
+// Please create minimum 3 of the students.
 // Result:
 // Map<int,Student> student = {__,___,___,...};
 
@@ -24,7 +24,9 @@
 // }
 // }
 
-void main(){
+// ignore_for_file: file_names
+
+void main() {
   Student student1 = Student();
   student1.name = 'Aung Aung';
   student1.age = 23;
@@ -37,17 +39,17 @@ void main(){
   student3.name = 'Bo Bo';
   student3.age = 23;
   student3.gender = 'Male';
-  Map<int, Student> map = {1:student1, 2:student2, 3:student3};
+  Map<int, Student> map = {1: student1, 2: student2, 3: student3};
   map.forEach((key, value) {
-    print('Roll_Number '+  key.toString() +'. ' +  value.name.toString() +'/ ' + value.age.toString() +'/ ' + value.gender.toString());
+    print('Roll_Number $key. ${value.name}/ ${value.age}/ ${value.gender}');
   });
 }
-class Student{
+
+class Student {
   String? name;
   int? age;
   String? gender;
 }
-
 
 /**
 void main(){
@@ -63,5 +65,3 @@ class Student{
   String? gender;
 }
  */
-
-

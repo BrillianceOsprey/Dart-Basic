@@ -6,6 +6,8 @@
 // how to change constructor of parent class?
 //
 
+// ignore_for_file: overridden_fields
+
 void main() {
   Engineer engineer = Engineer('MDY');
   engineer.speak();
@@ -34,7 +36,7 @@ class Person {
 
 class Engineer extends Person {
   // child class
-  Engineer(String adress) : super(adress); // super constructor
+  Engineer(super.adress); // super constructor
   String? degree;
   @override
   final height = 6;
@@ -51,7 +53,8 @@ class Engineer extends Person {
 
 class Admin extends Engineer {
   // extra testing
-  Admin(String adress) : super(adress);
+  Admin(super.adress);
+  @override
   int height = 7;
   @override
   void printHeight() {
