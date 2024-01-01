@@ -45,12 +45,12 @@ class Student implements Myanmar, English {
 
   @override
   void myanmar01() {
-    // TODO: implement myanmar01
+    // TODO: implement myanmar001
   }
 
   @override
   void english01() {
-    // TODO: implement english01
+    // TODO: implement english001
   }
 
   void science() {
